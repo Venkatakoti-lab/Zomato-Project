@@ -82,6 +82,7 @@ docker login -u koti0120       `Give Dockerhub credentials here`
 sudo su
 curl -sSfL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh | sh -s -- -b /usr/local/bin
 
+#Give the permisiion to docker scout to execute the file
 sudo chmod 777 /var/run/docker.sock
 
 
@@ -94,7 +95,7 @@ make sure enable 9000 port number
 
 10. Installation of Plugins in Jenkins
 Install below plugins:
-manage jenkijns--->plugins-->pipeline stage view,eclipse temurin installer, sonarqube scanner, nodejs, docker commons, docker pipeline,docker api , docker, docker build step, owasp dependency check, email extension, blue ocean,prometheus metrics
+manage jenkijns--->plugins-->pipeline stage view,eclipse temurin installer (this will helps to works with different java versions.), sonarqube scanner, nodejs, docker commons, docker pipeline,docker api , docker, docker build step, owasp dependency check, email extension, blue ocean,prometheus metrics
 
 11. SonarQube configuration in Jenkins
 goto sonar--> click on admin-->security-->user--> generate token

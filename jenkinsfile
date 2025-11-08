@@ -15,7 +15,7 @@ pipeline {
         }
         stage ("Git Checkout") {
             steps {
-                git 'https://github.com/koti0120/Zomato-Project.git'
+                git branch: 'main', url: 'https://github.com/Venkatakoti-lab/Zomato-Project.git'
             }
         }
         stage("Sonarqube Analysis"){
